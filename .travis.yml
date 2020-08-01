@@ -1,3 +1,2 @@
-install: gradle wrapper --gradle-version 5.2.1
 language: java
-script: mvn clean verify
+script: gradlew clean check
