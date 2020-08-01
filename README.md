@@ -1,4 +1,4 @@
-# Music
+# Music [![Build Status](https://travis-ci.org/sarthak-kakkar/music.svg?branch=master)](https://travis-ci.org/sarthak-kakkar/music)
 Enriching records from LastFm's APIs using Kafka streams and producer. 
 
 ## Prerequisite
