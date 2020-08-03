@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+docker-compose exec kafka-1 kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 3 --topic result --config cleanup.policy=compact
+docker-compose exec kafka-1 kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 3 --topic artists --config min.insync.replicas=2
+docker-compose exec kafka-1 kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 3 --topic songs --config min.insync.replicas=2
+docker-compose exec kafka-1 kafka-topics --bootstrap-server localhost:9092 --list
