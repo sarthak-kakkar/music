@@ -11,5 +11,5 @@ The application can be bundled up, to create an executable jar, by running `./gr
 
 Console application can also be started by executing `./gradlew clean run`.
 
-## Todo
-Create a consumer for the `results` topic.
+## Extension
+As an extension to this stand-alone app, a separate [Consumer](https://github.com/sarthak-kakkar/music-consumer) has been created, built on Kotlin, with the records shown in a Vaadin UI using Spring Boot.
